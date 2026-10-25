@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 5 - Profile</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container py-5" style="max-width: 700px;">
+  <div class="app p-4 p-md-5">
+
+    <h1 class="mb-1">My Profile</h1>
+    <p class="subhead mb-4">personal info and hobbies</p>
+
+    <!--Task 1: The Personal Info Object-->
+    <div class="profile-card p-4 mb-4">
+      <h2 class="h5 mb-3">userProfile <span class="badge rounded-pill">object</span></h2>
+
+      <div class="info-row mb-2">
+        <span class="label">name</span>
+        <span class="value" id="displayName">Anara</span>
+      </div>
+      <div class="info-row mb-2">
+        <span class="label">birthYear</span>
+        <span class="value" id="displayBirthYear">1984</span>
+      </div>
+      <div class="info-row mb-2">
+        <span class="label">isDeveloper</span>
+        <span class="value" id="displayIsDev">true</span>
+      </div>
+      <div class="info-row align-items-start mb-2">
+        <span class="label">hobbies</span>
+        <div class="hobby-list-preview d-flex flex-wrap gap-2" id="previewHobbies"></div>
+      </div>
+
+      <!--Task 2: Arithmetic Calculations-->
+      <div class="metric-box mt-3 p-3 d-flex justify-content-between">
+        <div class="metric-item">
+          <span class="metric-label">current age</span>
+          <span class="metric-number" id="ageDisplay">0</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">total hobbies</span>
+          <span class="metric-number" id="hobbyCountDisplay">0</span>
+        </div>
+      </div>
+    </div>
+
+    <!--Task 3: HTML Form Setup-->
+    <div class="form-section p-4 mb-4">
+      <h3 class="h6 mb-3">Update Profile</h3>
+      <div class="row g-3 mb-3">
+        <div class="col-md-6">
+          <label for="usernameInput" class="form-label">Username</label>
+          <input type="text" class="form-control rounded-pill" id="usernameInput" value="Anara">
+        </div>
+        <div class="col-md-6">
+          <label for="birthYearInput" class="form-label">Birth Year</label>
+          <input type="number" class="form-control rounded-pill" id="birthYearInput" value="1984">
+        </div>
+      </div>
+      <!--Task 4: Event Listener-->
+      <button id="updateProfileBtn" class="btn btn-purple rounded-pill">Update Profile</button>
+    </div>
+
+    <!--Task 5: Creating & Removing Elements-->
+    <div class="hobby-section p-4">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3">
+        <h3 class="h6 mb-0">Hobby List</h3>
+        <div class="d-flex gap-2 flex-wrap">
+          <input type="text" id="newHobbyInput" class="form-control rounded-pill" placeholder="new hobby...">
+          <button id="addItemBtn" class="btn btn-purple rounded-pill">Add Item</button>
+          <button id="removeItemBtn" class="btn btn-outline-purple rounded-pill">Remove Item</button>
+        </div>
+      </div>
+
+      <ul id="hobbyList" class="list-unstyled d-flex flex-column gap-2 mb-0"></ul>
+      <p class="small-note mt-3 mb-0">type a hobby and click Add Item · Remove Item deletes the last one</p>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

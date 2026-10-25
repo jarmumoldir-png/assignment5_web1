@@ -1,0 +1,184 @@
+body {
+  background: #f0e6ff;
+  font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+.app {
+  background: #ffffff;
+  border-radius: 32px;
+  box-shadow: 0 12px 30px rgba(80, 0, 120, 0.15);
+  border: 1px solid #d9c2ff;
+}
+
+h1 {
+  color: #4b0082;
+  font-weight: 600;
+}
+
+.subhead {
+  color: #8a2be2;
+  border-bottom: 2px dashed #c5a3ff;
+  padding-bottom: 0.75rem;
+}
+
+.profile-card {
+  background: #f5edff;
+  border-radius: 24px;
+  border-left: 10px solid #9b59b6;
+}
+
+.profile-card h2 {
+  color: #6a0dad;
+}
+
+.badge {
+  background: #d9b3ff;
+  color: #3b0066;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.info-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  font-size: 1.05rem;
+}
+
+.label {
+  font-weight: 600;
+  color: #4a1a6b;
+  min-width: 120px;
+}
+
+.value {
+  color: #2c003e;
+  background: white;
+  padding: 4px 14px;
+  border-radius: 40px;
+  border: 1px solid #ceb0ff;
+}
+
+.hobby-badge {
+  background: #b28dff;
+  color: #1e0030;
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  border: 1px solid #8f6bc9;
+}
+
+.metric-box {
+  background: #e7d5ff;
+  border-radius: 40px;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #561c7c;
+  font-weight: 700;
+}
+
+.metric-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #2b0040;
+}
+
+.form-section {
+  background: #faf3ff;
+  border-radius: 24px;
+  border: 1px solid #dcc7ff;
+}
+
+.form-section h3 {
+  color: #5a1e8a;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #682a9e;
+}
+
+.form-control:focus {
+  border-color: #9b59b6;
+  box-shadow: 0 0 0 0.25rem rgba(155, 89, 182, 0.25);
+}
+
+#newHobbyInput {
+  max-width: 180px;
+}
+
+.btn-purple {
+  background: #8e44ad;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-purple:hover {
+  background: #6a1b9a;
+  color: white;
+}
+
+.btn-outline-purple {
+  background: white;
+  color: #6b2d9b;
+  border: 2px solid #9b59b6;
+}
+
+.btn-outline-purple:hover {
+  background: #f1e2ff;
+  color: #6b2d9b;
+}
+
+.hobby-section {
+  background: #f3eaff;
+  border-radius: 24px;
+  border: 1px solid #cfb5ff;
+}
+
+.hobby-section h3 {
+  color: #4f1b7a;
+}
+
+ul#hobbyList {
+  background: white;
+  border-radius: 20px;
+  padding: 0.5rem;
+  min-height: 100px;
+  border: 1px dashed #bf9eff;
+}
+
+ul#hobbyList li {
+  background: #e9d8ff;
+  padding: 12px 18px;
+  border-radius: 40px;
+  font-size: 1rem;
+  color: #2f0047;
+  border-left: 6px solid #a55eea;
+}
+
+.empty-message {
+  color: #9a7bb5;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-style: italic;
+  border-left: none;
+  background: transparent;
+}
+
+.small-note {
+  font-size: 0.8rem;
+  color: #7d5e9e;
+  text-align: right;
+}
